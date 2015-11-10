@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailItemVC">
+            <connections>
+                <outlet property="img" destination="1xx-fB-zQ6" id="pLQ-pz-a8w"/>
+                <outlet property="lblName" destination="7DX-oQ-AiH" id="NMH-sJ-t5r"/>
+                <outlet property="lblPrice" destination="cd7-vB-Lhy" id="NcN-5N-3xR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backGroundBlack.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LLl-i7-ibf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1xx-fB-zQ6">
+                    <rect key="frame" x="97" y="182" width="180" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="UuP-CS-0In"/>
+                        <constraint firstAttribute="width" constant="180" id="fy7-QH-KZE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DX-oQ-AiH">
+                    <rect key="frame" x="28" y="391" width="331" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="7DX-oQ-AiH" secondAttribute="height" multiplier="331:40" id="uKj-0e-Vcm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                    <color key="textColor" red="1" green="0.63529411759999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd7-vB-Lhy">
+                    <rect key="frame" x="97" y="439" width="180" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cd7-vB-Lhy" secondAttribute="height" multiplier="60:7" id="nw7-Wu-xGL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="0.25818532259999999" green="0.79292929290000003" blue="0.26047079299999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cd7-vB-Lhy" secondAttribute="trailing" constant="98" id="0yZ-Gk-uCQ"/>
+                <constraint firstAttribute="bottom" secondItem="LLl-i7-ibf" secondAttribute="bottom" id="2or-tL-Pwl"/>
+                <constraint firstItem="LLl-i7-ibf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DtD-LI-kNb"/>
+                <constraint firstItem="cd7-vB-Lhy" firstAttribute="top" secondItem="7DX-oQ-AiH" secondAttribute="bottom" constant="8" id="KJn-Fb-BDJ"/>
+                <constraint firstItem="1xx-fB-zQ6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="182" id="LpS-LX-YQ9"/>
+                <constraint firstItem="LLl-i7-ibf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M81-DE-Sgd"/>
+                <constraint firstItem="1xx-fB-zQ6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MiQ-75-E7j"/>
+                <constraint firstAttribute="trailing" secondItem="7DX-oQ-AiH" secondAttribute="trailing" constant="16" id="Ncf-mg-2Q3"/>
+                <constraint firstItem="7DX-oQ-AiH" firstAttribute="top" secondItem="1xx-fB-zQ6" secondAttribute="bottom" constant="29" id="Oof-uu-V0u"/>
+                <constraint firstAttribute="trailing" secondItem="LLl-i7-ibf" secondAttribute="trailing" id="QUQ-bz-3DU"/>
+                <constraint firstItem="cd7-vB-Lhy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="97" id="TYn-ll-60B"/>
+                <constraint firstItem="7DX-oQ-AiH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="pgM-DT-YbQ"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="284.5" y="421.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backGroundBlack.jpg" width="640" height="1136"/>
+    </resources>
+</document>
